@@ -3,10 +3,11 @@
  <head>
   <script>
    const selectElement = document.querySelector('.ice-cream');
-   selectElement.addEventListener('change', (event) => {
+   selectElement.addEventListener("change", setVal);
+  function setVal(sender){
      const result = document.querySelector('.result');
-     result.textContent = `You like ${event.target.value}`;
-    });
+     result.textContent = `You like ${sender.target.value}`;
+  }
   </script>
  </head>
  <body>
