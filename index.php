@@ -20,6 +20,7 @@
   <script>
    const selectElement = document.querySelector('.ice-cream');
    const allInputs = document.querySelector('input');
+   const result = document.querySelector('.result');
 
    selectElement.addEventListener("change", setVal);
 
@@ -30,13 +31,11 @@
    function setVal(sender){
      switch (sender.type) {
        case select:
-         alert("Select");
+         result.textContent = "Select ${sender.target.value}";
          break;
        default:
-         alert("was anderes");
+         result.textContent = "was anderes ${sender.target.value}";
      }
-     const result = document.querySelector('.result');
-     result.textContent = `You like ${sender.target.value}`;
    }
 
   </script>
