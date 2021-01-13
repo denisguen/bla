@@ -21,12 +21,13 @@
    const selectElement = document.querySelector('.ice-cream');
    const allInputs = document.querySelector('input');
    const result = document.querySelector('.result');
+   var singleInput;
 
    selectElement.addEventListener("change", setVal);
 
-   forEach((singleInput in allInputs) => {
+   for(singleInput of allInputs) {
      singleInput.addEventListener("change", setVal);
-   });
+   };
 
    function setVal(sender){
      switch (sender.type) {
