@@ -32,7 +32,7 @@
 
    function setVal(sender){
      switch (sender.type) {
-       case select:
+       case .select:
          result.textContent = "Select " + $sender.target.value;
          break;
        default:
