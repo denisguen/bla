@@ -32,10 +32,10 @@
    function setVal(sender){
      switch (sender.type) {
        case select:
-         result.textContent = "Select " + ${sender.target.value};
+         result.textContent = "Select " + $sender.target.value;
          break;
        default:
-         result.textContent = "was anderes " + ${sender.target.value};
+         result.textContent = "was anderes " + $sender.target.value;
      }
    }
 
