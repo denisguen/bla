@@ -31,13 +31,14 @@
    };
 
    function setVal(sender){
-     switch (sender.type) {
-       case .select:
+     alert(sender.target.type);
+     /*switch (sender.type) {
+       case sender.type = select:
          result.textContent = "Select " + $sender.target.value;
          break;
        default:
          result.textContent = "was anderes " + $sender.target.value;
-     }
+     }*/
    }
 
   </script>
