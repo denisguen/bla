@@ -19,8 +19,9 @@
   <div class="result"></div>
   <script>
    const selectElement = document.querySelector('.ice-cream');
-   const allInputs = document.querySelector('input');
    const result = document.querySelector('.result');
+
+   var allInputs = document.querySelector(input);
    var singleInput;
 
    selectElement.addEventListener("change", setVal);
