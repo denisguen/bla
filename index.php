@@ -34,10 +34,10 @@
      //alert(sender.target.type);
      switch (sender.type) {
        case sender.type = "select-one":
-         result.textContent = "Select " + $sender.target.value;
+         result.textContent = "Select " + sender.target.value;
          break;
        default:
-         result.textContent = "was anderes " + $sender.target.value;
+         result.textContent = "was anderes " + sender.target.value;
      }
    }
 
