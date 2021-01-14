@@ -33,7 +33,7 @@
    function setVal(sender){
      //alert(sender.target.type);
      switch (sender.type) {
-       case sender.type = "select-one":
+       case sender.target.type = "select-one":
          result.textContent = "Select " + sender.target.type + " " + sender.target.value;
          break;
        default:
