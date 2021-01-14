@@ -32,8 +32,8 @@
 
    function setVal(sender){
      //alert(sender.target.type);
-     switch (sender.type) {
-       case sender.target.type = document.input.select:
+     switch (sender.target.type) {
+       case "select-one": //sender.target.type = document.input.select:
          result.textContent = "Select " + sender.target.type + " " + sender.target.value;
          break;
        default:
